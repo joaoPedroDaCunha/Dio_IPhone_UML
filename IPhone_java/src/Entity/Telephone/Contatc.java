@@ -1,4 +1,5 @@
-public class Contatc {
+package Entity.Telephone;
+public class Contatc implements Comparable<Contatc>{
     private String nameContact;
     private int numberContact;
     private String discriptionContact;
@@ -64,6 +65,11 @@ public class Contatc {
         if (numberContact != other.numberContact)
             return false;
         return true;
+    }
+
+    @Override
+    public int compareTo(Contatc o) {
+       return nameContact.compareToIgnoreCase(o.nameContact);
     }
 
     
