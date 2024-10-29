@@ -1,6 +1,6 @@
 package Entity.MusicPlayer;
 
-public class MusicFile {
+public class MusicFile implements Reproducer {
 
     private String musicFilePath;
 
@@ -16,6 +16,17 @@ public class MusicFile {
         this.musicFilePath = musicFilePath;
     }
 
-    
+    @Override
+    public void playe(String musicFilePath) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'playe'");
+    }
+
+    @Override
+    public void pause() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'pause'");
+    }
+
     
 }
