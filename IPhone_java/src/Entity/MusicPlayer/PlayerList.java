@@ -15,8 +15,8 @@ public class PlayerList {
         playerList.add(new MusicFile(musicName, musicFilePath));
     }
 
-    public void removeMusic(Set<MusicFile> removemusic){
-        playerList.removeAll(removemusic);
+    public void removeMusic(Set<MusicFile> removeMusic){
+        playerList.removeAll(removeMusic);
     }
 
 }
