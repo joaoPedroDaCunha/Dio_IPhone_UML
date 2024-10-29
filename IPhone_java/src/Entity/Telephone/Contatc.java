@@ -1,5 +1,5 @@
 package Entity.Telephone;
-public class Contatc implements Comparable<Contatc>{
+public class Contatc implements Comparable<Contatc>,Call{
     private String nameContact;
     private int numberContact;
     private String discriptionContact;
@@ -70,6 +70,18 @@ public class Contatc implements Comparable<Contatc>{
     @Override
     public int compareTo(Contatc o) {
        return nameContact.compareToIgnoreCase(o.nameContact);
+    }
+
+    @Override
+    public void initCall(int number) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'initCall'");
+    }
+
+    @Override
+    public void endOfCall() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'endOfCall'");
     }
 
     
